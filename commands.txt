@@ -1,0 +1,22 @@
+git checkout -b home_work_25
+git add src/util/PaymentDevice.java
+git commit -m "Add PaymentDevice interface to abstract payment handling"
+
+git add src/util/CoinAcceptor.java
+git commit -m "Implement CoinAcceptor with basic coin input handling"
+
+git add src/util/CardAcceptor.java
+git commit -m "Implement CardAcceptor with OTP simulation"
+
+git add src/AppRunner.java
+git commit -m "Fix: robust input handling and action processing in AppRunner"
+
+git add commands.txt
+git commit -m "Add commands.txt documenting git and run commands"
+
+git push -u origin home_work_25
+git add <resolved-files>
+git commit -m "Resolve merge conflicts between master and home_work_25"
+git push origin master
+javac -d out $(find src -name "*.java")
+java -cp out Main
